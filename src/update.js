@@ -1,17 +1,14 @@
-// URL DECLARATION
-var updateURL = URL + ID;
-
 // DATA
 const DATA2 = {
   name: "John",
-  message: "This is John",
+  message: "I am John",
 };
 
 // UPDATE FUNCTION
-function updat() {
+function update_() {
   $.ajax({
     type: "PUT",
-    url: updateURL,
+    url: URL + ID,
     contentType: "application/json",
     data: JSON.stringify(DATA2),
     success: function () {

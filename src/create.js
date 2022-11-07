@@ -5,8 +5,7 @@ const DATA1 = {
 };
 
 // CREATE FUNCTION
-
-function creat() {
+function create_() {
   $.ajax({
     type: "POST",
     url: URL,

@@ -1,6 +1,6 @@
 // URL DECLARATION
 var URL = "http://localhost:3000/Messages/";
-var ID = "6366539d9749a850824f6c60";
+var ID = "6368edb289f972b674aefd09";
 
 // TO GET HTML OUTPUT
 function htmlOutput(out) {
@@ -9,4 +9,5 @@ function htmlOutput(out) {
       text: out,
     })
   );
+  console.log("Printed");
 }

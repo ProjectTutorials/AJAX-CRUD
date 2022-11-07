@@ -1,11 +1,8 @@
-// URL DECLARATION
-var deleteURL = URL + ID;
-
 // DELETE FUNCTION
-function delet() {
+function delete_() {
   $.ajax({
     type: "DELETE",
-    url: deleteURL,
+    url: URL + ID,
     success: function () {
       var msg = "delete successful";
       console.log(msg);

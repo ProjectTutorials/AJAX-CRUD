@@ -3,10 +3,10 @@ function read_all() {
   $.ajax({
     type: "GET",
     url: URL,
-    success: function (res) {
+    success: function (data) {
       console.log("success!");
-      console.log(res);
-      htmlOutput(res);
+      console.log(data);
+      htmlOutput(data);
     },
   });
 }
@@ -16,9 +16,9 @@ function read_one() {
   $.ajax({
     type: "GET",
     url: URL,
-    success: function (res) {
-      $.each(res, function (index, element) {
-        console.log("success");
+    success: function (data) {
+      $.each(data, function (index, element) {
+        console.log("success!");
         htmlOutput(element.name);
       });
     },
